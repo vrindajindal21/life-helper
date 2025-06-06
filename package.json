@@ -17,7 +17,7 @@
     "start": "next start",
     "lint": "next lint",
     "electron-dev": "concurrently \"next dev\" \"electron .\"",
-    "electron-build": "next build && next export && electron-builder",
+    "electron-build": "next build && electron-builder",
     "electron-start": "electron ."
   },
   "dependencies": {
