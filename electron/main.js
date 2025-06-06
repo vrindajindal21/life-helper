@@ -18,7 +18,8 @@ function createWindow() {
     mainWindow.webContents.openDevTools();
   } else {
     // In production, load the built files
-    mainWindow.loadFile(path.join(__dirname, '../out/index.html'));
+    const indexPath = path.join(app.getAppPath(), 'out', 'index.html');
+    mainWindow.loadFile(indexPath);
   }
 }
 
